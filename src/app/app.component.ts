@@ -13,6 +13,12 @@ export class AppComponent {
   porcentaje: number = 0.123456789;
   salario: number = 1234.5;
 
+  valorPromesa = new Promise<string>(( resolve ) =>{
+    setTimeout(() => {
+      resolve('cargo la data')
+    }, 4500);
+  })
+
   heroe = {
     nombre: 'Peter',
     clave: 'Spidy',
