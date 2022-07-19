@@ -11,4 +11,5 @@ export class AppComponent {
   personajes: string[] = ['Homero', ' Marge',' Bart', ' Lisa', ' Maguie', ' Apu', ' Nelson', ' Flanders', ' Milhouse']
   PI: number = Math.PI;
   porcentaje: number = 0.123456789;
+  salario: number = 1234.5;
 }
