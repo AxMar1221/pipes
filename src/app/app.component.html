@@ -113,6 +113,19 @@
           </td>
           <td>{{ fecha | date: 'MMMM - dd':'':idioma  }}</td>
         </tr>
+        <!-- tarea -->
+        <tr>
+          <td>{{ nombre }}</td>
+            <td> 
+              password:{{activar}}
+              <br>
+                <button (click)=" activar = !activar" class="btn btn-outline-danger">
+                  Activar / Desactivar
+                </button> 
+            </td>
+          <td>{{ nombre | password: activar }}</td>
+        </tr>
+
       </tbody>
     </table>
 
@@ -130,19 +143,19 @@
         </pre>
       </div>
     </div>
-  </div>
-  <h3 class="mt-2">Domseguro</h3>
-  <hr>
-    <div class="row">
-      <div class="col mb-5">
-        <iframe width="560" 
-                height="315" 
-                [src]="videoUrl | domseguro " 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
+    <h3 class="mt-2">Domseguro</h3>
+    <hr>
+      <div class="row">
+        <div class="col mb-5">
+          <iframe width="560" 
+                  height="315" 
+                  [src]="videoUrl | domseguro " 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
       </div>
-    </div>
+  </div>
 </div>
