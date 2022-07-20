@@ -15,6 +15,7 @@ export class AppComponent {
   fecha: Date = new Date();
 
   idioma : string = 'es';
+  videoUrl: string = "https://www.youtube.com/embed/KhR-5bd3f1o"
 
   valorPromesa = new Promise<string>(( resolve ) =>{
     setTimeout(() => {
