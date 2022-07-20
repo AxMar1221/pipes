@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   nombre: string = 'Bart Simpson';
-
+  nombre2: string = 'TaChI dItO'
   personajes: string[] = ['Homero', ' Marge',' Bart', ' Lisa', ' Maguie', ' Apu', ' Nelson', ' Flanders', ' Milhouse']
   PI: number = Math.PI;
   porcentaje: number = 0.123456789;
